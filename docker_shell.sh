@@ -18,4 +18,4 @@ echo "build docker image"
 docker build -t $NAME .
 
 echo "run docker container"
-docker run --name $NAME -p 8082:80 -d $NAME
+docker run --name $NAME -p 8082:8082 -d $NAME
