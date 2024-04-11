@@ -9,12 +9,22 @@ body,
 }
 
 body {
-  /* @apply bg-gray-100 dark:bg-gray-900; */
-  @apply bg-gray-700;
+  @apply bg-gray-100 dark:bg-gray-700;
 }
 
 @layer components {
   .m-button {
     @apply font-medium bg-sky-500 text-white rounded-3xl px-5 py-2 hover:bg-sky-600;
+  }
+
+  .btn {
+    @apply px-2 py-0.5 text-sm rounded-sm border border-solid border-gray-500 bg-gray-200 text-gray-900;
+    @apply dark:border-gray-400 dark:bg-gray-800 dark:text-white;
+  }
+  .btn:hover {
+    @apply bg-gray-200/20 dark:bg-gray-800/20;
+  }
+  .btn:active {
+    @apply bg-gray-200/60 dark:bg-gray-800/60;
   }
 }

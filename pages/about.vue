@@ -1,6 +1,7 @@
 <template>
   <main class="h-full flex justify-center items-center">
     <button class="m-button" @click="back">返回</button>
+  
   </main>
 </template>
 
